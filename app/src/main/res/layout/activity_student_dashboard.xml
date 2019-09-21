@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentDashboard">
+
+    <TextView
+        android:id="@+id/detailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student details" />
+
+    <Button
+        android:id="@+id/votingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailsTextView"
+        android:layout_marginTop="25dp"
+        android:text="VOTING" />
+
+    <Button
+        android:id="@+id/selectFoodItemsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/votingButton"
+        android:layout_marginTop="25dp"
+        android:text="SELECT FOOD ITEMS" />
+
+    <Button
+        android:id="@+id/accountDetailsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectFoodItemsButton"
+        android:layout_marginTop="25dp"
+        android:text="ACCOUNT DETAILS" />
+
+    <Button
+        android:id="@+id/feedbackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="giveFeedback"
+        android:layout_below="@+id/accountDetailsButton"
+        android:layout_marginTop="25dp"
+        android:text="FEEDBACK" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HostelDashboard">
+<RelativeLayout
+    android:id="@+id/hostelRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/hostelDetailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOSTEL DETAILS" />
+
+    <Button
+        android:id="@+id/hostelStudentList"
+        android:layout_width="match_parent"
+        android:onClick="studentsList"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hostelDetailsTextView"
+        android:layout_marginTop="25dp"
+        android:text="STUDENTS TO BE VERIFIED" />
+
+    <Button
+        android:id="@+id/hostelComplaints"
+        android:onClick="hostelComplaints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hostelStudentList"
+        android:layout_marginTop="25dp"
+        android:text="HOSTEL COMPLAINTS" />
+
+    <Button
+        android:id="@+id/verifyStudentsButton"
+        android:onClick="studentsToBeVerified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hostelComplaints"
+        android:layout_marginTop="25dp"
+        android:text="STUDENTS" />
+
+
+
+</RelativeLayout>
+
+</LinearLayout>

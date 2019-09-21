@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CopDeDestral</string>
+    <string name="settings_password">Enter PassWord</string>
+    <string name="settings_password2">Enter Password Again</string>
+    <string name="settings_pwd_equal">passwords equal</string>
+    <string name="settings_pwd_not_equal">passwords not equal</string>
+</resources>

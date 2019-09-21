@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessActivity">
+
+
+    <EditText
+        android:id="@+id/messIdTextView"
+        android:layout_width="389dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Hostel ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/hostelPass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <EditText
+        android:id="@+id/hostelPass"
+        android:imeOptions="actionDone"
+        android:layout_width="389dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/messIdTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <Button
+        android:id="@+id/messLogin"
+        android:layout_width="384dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/hostelPass"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="360dp"
+        android:onClick="doLogin"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hostelPass"
+        app:layout_constraintVertical_bias="0.509" />
+</RelativeLayout>

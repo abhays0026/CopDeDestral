@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity"
+    >
+
+    <EditText
+        android:id="@+id/loginRollNo"
+        android:layout_width="350dp"
+        android:imeOptions="actionDone"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Roll Number"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <EditText
+        android:id="@+id/loginStudentPassword"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:imeOptions="actionDone"
+        android:layout_below="@id/loginRollNo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <Button
+        android:id="@+id/studentLoginButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginRollNo"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="sendNew"
+        android:text="LOGIN"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <Button
+        android:id="@+id/studentSignUp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/studentLoginButton"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="signUpPage"
+        android:text="New Student? SIGN UP!"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="611dp" />
+
+    <EditText
+        android:id="@+id/hostelIdStudentLogin"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/loginRollNo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="Hostel ID"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_marginStart="20dp"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/hostelIdStudentLogin"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>
+
+</ScrollView>
